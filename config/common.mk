@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     Adaway \
     Amaze \
     AudioFX \
+    busybox \
     CMSettingsProvider \
     Eleven \
     ExactCalculator \
