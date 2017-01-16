@@ -142,12 +142,22 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     WeatherProvider
 
-# Optional SuperSU apk and
-# OMS7 substratum & masquerade
+# Conditionally build in su
+ifeq ($(WITH_SU),true)
+PRODUCT_PACKAGES += \
+    su \
+    Adaway \    
+    substratum \
+    masquerade \
+    KernelAdiutor 
+endif
+endif
+
+# Optional apps for rooted devices
 ifeq ($(WITH_SUPERSU),true)
 PRODUCT_PACKAGES += \
-    SuperSU \
     su \
+    SuperSU \
     Adaway \    
     substratum \
     masquerade \
@@ -240,17 +250,6 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
     procrank
-
-# Conditionally build in su
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
-    su \
-    Adaway \    
-    substratum \
-    masquerade \
-    KernelAdiutor 
-endif
-endif
 
 DEVICE_PACKAGE_OVERLAYS += $(OVERLAY)/common
 
