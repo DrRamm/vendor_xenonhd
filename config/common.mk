@@ -152,7 +152,7 @@ PRODUCT_PACKAGES += \
 # Optional SuperSU apk
 ifeq ($(WITH_SUPERSU),true)
 PRODUCT_PACKAGES += \
-    SuperSU\
+    SuperSU \
     su
 endif
 
