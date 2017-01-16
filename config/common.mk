@@ -150,7 +150,7 @@ PRODUCT_PACKAGES += \
     su \
     Adaway \    
     substratum \
-    masquerade\
+    masquerade \
     KernelAdiutor 
 endif
    
@@ -244,7 +244,11 @@ PRODUCT_PACKAGES += \
 # Conditionally build in su
 ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
-    su
+    su \
+    Adaway \    
+    substratum \
+    masquerade \
+    KernelAdiutor 
 endif
 endif
 
