@@ -93,7 +93,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     LockClock \
     media_codecs_ffmpeg.xml \
-    MiXplorer \
+    Amaze \
     NovaLauncher \
     PhotoTable \
     Profiles \
